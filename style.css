@@ -34,10 +34,11 @@ h2
 
 header
 {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    top: 10px;
     text-align: center;
-    position: relative;
-    line-height: 0px;
-    bottom: 1em;
     color: rgb(0, 0, 0);
 }
 
@@ -76,15 +77,12 @@ header span
     color: rgb(255, 255, 255);
 }
 
-.navbar
-{
-    background: rgba(0, 0, 0, 0.603);
-}
+
 
 .navbar a
 {
+    z-index: 2;
     text-align: center;
-    padding: 5x;
     padding-bottom: 15px;
     padding-left: 40px;
     font-size: 1.5em;
@@ -93,7 +91,6 @@ header span
 
 .navbar a:active
 {
-    background-color: rgba(0, 255, 255, 0);
     color: #5865f2c0;
 }
 
@@ -107,5 +104,8 @@ color: #4651c5;
 {
     position: fixed;
     min-width: 100%;
-    max-width: 100%;
+    min-height: 100%;
+    right: 0;
+    bottom: 0;
+
 }
