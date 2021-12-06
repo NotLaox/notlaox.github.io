@@ -4,8 +4,6 @@ body
     margin: 0;
     padding: 0;
     font-family: 'Bebas Neue', sans-serif;
-    background-image: url(Assets/image.jpg);
-    
 }
 
 .center
@@ -24,13 +22,14 @@ h1
     font-size: 4em;
     line-height: -10px;
     color: crimson;
-    
+
 }
 
 h2
 {
     text-align: center;
     font-size: 2.5em;
+    color:rgb(0, 0, 0);
 }
 
 #cds
@@ -48,10 +47,7 @@ h2
     margin: 0 5px;
     background: rgba(0, 0, 0, 0.199);
     border: 2px solid;
-
     font-size: 2em;
-    
-
 }
 
 #cds div span
@@ -61,15 +57,14 @@ h2
 }
 
 
-#cds div:before
+#cds div span:nth-child(1)
 {
-    content: '';
-    color: red;
+    color: rgb(255, 255, 255);
 }
 
 .navbar
 {
-    background: rgba(0, 0, 0, 0.479);
+    background: rgba(0, 0, 0, 0.603);
 }
 
 .navbar a
@@ -77,7 +72,7 @@ h2
     text-align: center;
     padding: 5x;
     padding-bottom: 15px;
-    padding-left: 50px;
+    padding-left: 40px;
     font-size: 1.5em;
     color: #5865F2;
 }
@@ -86,4 +81,17 @@ h2
 {
     background-color: rgba(0, 255, 255, 0);
     color: #5865f2c0;
+}
+
+.navbar a:hover
+{
+color: #4651c5;
+
+}
+
+#Video
+{
+    position: fixed;
+    min-width: 100%;
+    max-width: 100%;
 }
