@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <!-- Version 1.2 -->
+    <!-- Version 1 -->
     <head>
         <title>ToFCountdown</title>
         <link rel ="stylesheet" type="text/css" href="style.css">
         <link rel="icon" type="asset/icon" href="Assets/icon.ico">
     </head>
-    <div class="navbar">
-        
-        <script src="https://kit.fontawesome.com/8a16e9eca0.js" crossorigin="anonymous"></script>
-        <a href="https://discord.gg/skG3924Up5" title="Join for more Tower Of Fantasy News!"><i class="fab fa-discord"></i></a>
-        <header> Estimated Countdown <span>(If we get Server times it will be updated.)</span></header>
-        
-    </div>
+
+    <script src="https://kit.fontawesome.com/8a16e9eca0.js" crossorigin="anonymous"></script>
+    <a class="discord" href="https://discord.gg/skG3924Up5" title="Join for more Tower Of Fantasy News!">
+        <i class="fab fa-discord" aria-hidden="true"></i>
+      </a>
+    <header> Estimated Countdown <span>(If we get Server times it will be updated.)</span></header>
 
     <video autoplay muted loop id="Video">
         <source src="Assets/1080.mp4" type="video/mp4">
@@ -31,7 +30,7 @@
         <script src="Plugins/jquery.countdown.js"></script>
         
         <script type="text/javascript">
-            $('#cds').countdown('12/16/2021 6:0:0', function(event){
+            $('#cds').countdown('12/15/2021 8:0:0', function(event){
                 var $this = $(this).html(event.strftime(''
                 + '<div><span>%w</span><span>Week</span></div>'
                 + '<div><span>%d</span><span>Days</span></div>' 
