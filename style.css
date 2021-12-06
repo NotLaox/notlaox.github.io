@@ -35,7 +35,6 @@ h2
 
 header
 {
-    z-index: 1;
     position: absolute;
     width: 100%;
     top: 10px;
@@ -86,14 +85,31 @@ header span
     margin-top: 15px;
     margin-left: 15px;
     color: #5865F2;
-  }
+}
+
+.discord:hover
+{
+    color: #4954c7;
+}
 
 #Video
 {
     position: fixed;
-    min-width: 100%;
-    min-height: 100%;
+    z-index: -1;
     right: 0;
     bottom: 0;
 
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #Video {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #Video { 
+        width:auto;
+        height: 100%;
+    }
 }
