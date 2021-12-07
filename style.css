@@ -36,10 +36,11 @@ h2
 header
 {
     position: absolute;
+    top: 95%;
     width: 100%;
-    top: 10px;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(66, 66, 66);
+    font-size: 1.5em;
 }
 
 header span
@@ -77,20 +78,24 @@ header span
     color: rgb(255, 255, 255);
 }
 
-
-.discord 
+.Socials
 {
     position: absolute;
-    z-index: 1000;
-    margin-top: 15px;
-    margin-left: 15px;
-    color: #5865F2;
-    font-size: 1.6em;
+    top: 105%;
+    width: 100%;
 }
 
-.discord:hover
+.Socials a 
 {
-    color: #4954c7;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.Socials a:hover
+{
+    color: rgb(80, 80, 80);
 }
 
 #Video
